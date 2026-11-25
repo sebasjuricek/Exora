@@ -20,6 +20,13 @@ The single Gradle module targets Minecraft 1.21.1 with NeoForge and Java 21. `Ex
 
 Machines consume material tags and expose supported capabilities. Logistics moves resources through these capabilities. Energy owns power behavior. Equipment and vehicles use parts and power through their own lifecycle code. Progression owns unlock checks used by manufacturing and workstation actions. Entities and world encounters award discovery evidence through a progression interface. Keep shared contracts near the feature that owns their behavior and avoid dependency cycles.
 
+### Design boundaries for future milestones
+
+- Progression records recoverable team evidence and exposes completed proofs to tier checks. Machines, routes, and encounters report completed work through that interface. The [progression spec](docs/PROGRESSION.md) defines the capabilities each gate needs.
+- Reuse transfer and diagnostics boundaries for industrial controls, computing, and robotic jobs. Plan local operation during a network outage, shared authority for dispatch, and bounded per-tick work.
+- Share ownership, energy, service, and recovery rules among vehicles, suits, and robots. For future sites, stations, habitats, and dimensions, world systems own access and return endpoints. Keep logistics and equipment state valid across dimension changes and restarts.
+- Keep optional combat settings and world effects separate from required research proofs. Validate the mainline on a dedicated server with optional payloads disabled.
+
 ## Multiplayer and data
 
 - The logical server owns inventory changes, research progress, vehicle authority, and damage. Clients send intent. Validate the sender's permissions, distance, current state, and control seat before applying changes.

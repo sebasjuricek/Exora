@@ -2,6 +2,12 @@
 
 Exora is an industrial science-fiction technology mod for Minecraft 1.21.1. Players build an automated supply chain, research successive technology ages, and use their equipment to explore hazardous sites and take on original encounters. The first expansion takes place in the Overworld.
 
+## Design goals
+
+The end goal spans fictional military and science-fiction equipment, powersuits, transportation, robotics, computing, scientific research, space infrastructure, futuristic technology, and civilian technology. The eight-age campaign starts with a workshop and ends with dimensional routes and a Dyson sphere sector.
+
+Start with the [confirmed end goals](docs/MASTER_DESIGN.md#confirmed-end-goals), then follow the [eight-age progression spec](docs/PROGRESSION.md), [content catalog](CONTENT_CATALOG.md), and [roadmap](ROADMAP.md). The catalog maps each requested family to a proposed unlock. Gameplay development is at the foundation stage.
+
 ## Development
 
 The current project contains a loadable mod entry point, build tooling, and design documents. Gameplay content starts with the first industrial progression slice.
@@ -20,11 +26,11 @@ The server uses `run-server/` and requires the operator to review and accept the
 ## Project documents
 
 - [AGENTS.md](AGENTS.md) records contributor conventions.
-- [MASTER_DESIGN.md](MASTER_DESIGN.md) defines the player experience and shared systems.
+- [docs/MASTER_DESIGN.md](docs/MASTER_DESIGN.md) defines the confirmed end goals, player experience, and shared systems.
 - [ROADMAP.md](ROADMAP.md) defines milestones and acceptance criteria.
 - [ARCHITECTURE.md](ARCHITECTURE.md) defines package ownership, persistence, and networking boundaries.
-- [PROGRESSION.md](PROGRESSION.md) defines the technology tree and encounter gates.
+- [docs/PROGRESSION.md](docs/PROGRESSION.md) defines all eight ages, their internal tiers, the technology branches, and advancement proofs.
 - [CONTENT_CATALOG.md](CONTENT_CATALOG.md) records planned content by age.
-- [REFERENCES.md](REFERENCES.md) records upstream tooling and design influences.
+- [docs/REFERENCES.md](docs/REFERENCES.md) records the upstream source reviews, reuse decisions, and integration plan.
 
 Exora's mod metadata uses All Rights Reserved. The inherited NeoForge template files carry their original [MIT notice](TEMPLATE_LICENSE.txt).
