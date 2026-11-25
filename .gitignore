@@ -1,0 +1,15 @@
+/.gradle/
+/build/
+/run/
+/run-*/
+/out/
+/.idea/
+/.vscode/
+/.settings/
+/.project
+/.classpath
+*.iml
+*.log
+.DS_Store
+Thumbs.db
+/src/generated/resources/.cache/
