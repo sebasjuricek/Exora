@@ -11,7 +11,9 @@ The wrapper pins Gradle 9.2.1. The build targets Minecraft 1.21.1 and pins NeoFo
 | Launch development server | `.\gradlew.bat runServer` | `./gradlew runServer` |
 | Run data generation | `.\gradlew.bat runData` | `./gradlew runData` |
 
-The server uses `run-server/`. The operator must review and accept the Minecraft EULA before starting a server world. Data generation uses `run-data/` and writes generated resources under `src/generated/resources/`. Commit intended generated resources with the corresponding source. Keep local worlds, logs, and caches outside Git.
+The development server uses `run-server/` and can start in offline mode. For a local smoke test, create or edit `run-server/server.properties` and set `server-ip=127.0.0.1` before launching. For shared playtests, use an authenticated NeoForge server with the built JAR and follow the server setup instructions, including the operator's EULA review. [NeoForge server setup](https://docs.neoforged.net/user/docs/server/)
+
+Data generation uses `run-data/` and writes generated resources under `src/generated/resources/`. Commit intended generated resources with the corresponding source. Keep local worlds, logs, and caches outside Git.
 
 ## Develop and review
 
