@@ -1,0 +1,16 @@
+equip minecraft:stone_pickaxe
+mine 4 161 5
+mine 3 161 5
+awaititem exora:energy_buffer 1
+equip exora:energy_buffer
+use 4 160 5
+use 4 161 6
+clickitem minecraft:iron_ingot
+right 0
+click 36
+awaitslot 1 exora:iron_plate 3
+shot stored-power-batch
+shift 1
+awaititem exora:iron_plate 15
+mark isolated_buffer_finished
+close

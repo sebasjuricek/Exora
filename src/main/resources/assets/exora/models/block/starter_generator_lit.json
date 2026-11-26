@@ -1,0 +1,6 @@
+{
+  "parent": "exora:block/starter_generator",
+  "textures": {
+    "firebox_cold": "exora:block/firebox_hot"
+  }
+}

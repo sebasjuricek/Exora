@@ -1,0 +1,20 @@
+forceload add 4 4
+fill 0 160 0 14 160 14 minecraft:stone
+fill 0 161 0 14 167 14 minecraft:air
+setworldspawn 6 161 6
+gamerule spawnRadius 0
+gamerule doDaylightCycle false
+time set day
+setblock 7 161 5 minecraft:oak_log
+setblock 7 161 7 minecraft:chest
+item replace block 7 161 7 container.0 with minecraft:oak_log 20
+item replace block 7 161 7 container.1 with minecraft:cobblestone 52
+item replace block 7 161 7 container.2 with minecraft:coal 10
+item replace block 7 161 7 container.3 with minecraft:raw_iron 18
+item replace block 7 161 7 container.4 with minecraft:raw_copper 6
+item replace block 7 161 7 container.5 with minecraft:sand 4
+team add foundry
+team join foundry Fitter
+team join foundry Winder
+tp Winder 8.5 161 5.5
+tp Fitter 6.65 161 5.75

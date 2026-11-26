@@ -1,0 +1,20 @@
+{
+  "type": "exora:manual",
+  "stage": 2,
+  "order": 6,
+  "materials": [
+    {
+      "item": "exora:machine_casing"
+    },
+    {
+      "item": "exora:copper_winding"
+    },
+    {
+      "item": "exora:drive_assembly"
+    }
+  ],
+  "result": {
+    "id": "exora:coil_mill",
+    "count": 1
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "exora:manual",
+  "stage": 1,
+  "order": 2,
+  "materials": [
+    {
+      "item": "minecraft:copper_ingot"
+    }
+  ],
+  "result": {
+    "id": "exora:copper_winding",
+    "count": 2
+  }
+}

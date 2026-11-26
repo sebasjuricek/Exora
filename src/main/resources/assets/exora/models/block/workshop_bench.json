@@ -1,0 +1,29 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "particle": "exora:block/honey_planks",
+    "blued_steel": "exora:block/blued_steel",
+    "cast_iron": "exora:block/cast_iron",
+    "copper": "exora:block/copper",
+    "honey_planks": "exora:block/honey_planks",
+    "iron_edge": "exora:block/iron_edge",
+    "oiled_timber": "exora:block/oiled_timber",
+    "soapstone": "exora:block/soapstone"
+  },
+  "elements": [
+    {"from": [1, 0, 1], "to": [4, 11, 4], "faces": {"north": {"texture": "#oiled_timber"}, "south": {"texture": "#oiled_timber"}, "east": {"texture": "#oiled_timber"}, "west": {"texture": "#oiled_timber"}, "up": {"texture": "#oiled_timber"}, "down": {"texture": "#oiled_timber"}}},
+    {"from": [1, 0, 12], "to": [4, 11, 15], "faces": {"north": {"texture": "#oiled_timber"}, "south": {"texture": "#oiled_timber"}, "east": {"texture": "#oiled_timber"}, "west": {"texture": "#oiled_timber"}, "up": {"texture": "#oiled_timber"}, "down": {"texture": "#oiled_timber"}}},
+    {"from": [12, 0, 1], "to": [15, 11, 4], "faces": {"north": {"texture": "#oiled_timber"}, "south": {"texture": "#oiled_timber"}, "east": {"texture": "#oiled_timber"}, "west": {"texture": "#oiled_timber"}, "up": {"texture": "#oiled_timber"}, "down": {"texture": "#oiled_timber"}}},
+    {"from": [12, 0, 12], "to": [15, 11, 15], "faces": {"north": {"texture": "#oiled_timber"}, "south": {"texture": "#oiled_timber"}, "east": {"texture": "#oiled_timber"}, "west": {"texture": "#oiled_timber"}, "up": {"texture": "#oiled_timber"}, "down": {"texture": "#oiled_timber"}}},
+    {"from": [1, 3, 3], "to": [15, 4, 14], "faces": {"north": {"texture": "#honey_planks"}, "south": {"texture": "#honey_planks"}, "east": {"texture": "#honey_planks"}, "west": {"texture": "#honey_planks"}, "up": {"texture": "#honey_planks"}, "down": {"texture": "#honey_planks"}}},
+    {"from": [0, 10, 0], "to": [16, 12, 16], "faces": {"north": {"texture": "#honey_planks"}, "south": {"texture": "#honey_planks"}, "east": {"texture": "#honey_planks"}, "west": {"texture": "#honey_planks"}, "up": {"texture": "#honey_planks"}, "down": {"texture": "#honey_planks"}}},
+    {"from": [1, 7, 1], "to": [10, 10, 14], "faces": {"north": {"texture": "#oiled_timber"}, "south": {"texture": "#oiled_timber"}, "east": {"texture": "#oiled_timber"}, "west": {"texture": "#oiled_timber"}, "up": {"texture": "#oiled_timber"}, "down": {"texture": "#oiled_timber"}}},
+    {"from": [4, 8, 0.5], "to": [7, 9, 1.25], "faces": {"north": {"texture": "#iron_edge"}, "south": {"texture": "#iron_edge"}, "east": {"texture": "#iron_edge"}, "west": {"texture": "#iron_edge"}, "up": {"texture": "#iron_edge"}, "down": {"texture": "#iron_edge"}}},
+    {"from": [9, 12, 7], "to": [15, 13, 14], "faces": {"north": {"texture": "#soapstone"}, "south": {"texture": "#soapstone"}, "east": {"texture": "#soapstone"}, "west": {"texture": "#soapstone"}, "up": {"texture": "#soapstone"}, "down": {"texture": "#soapstone"}}},
+    {"from": [2, 12, 3], "to": [7, 13, 8], "faces": {"north": {"texture": "#cast_iron"}, "south": {"texture": "#cast_iron"}, "east": {"texture": "#cast_iron"}, "west": {"texture": "#cast_iron"}, "up": {"texture": "#cast_iron"}, "down": {"texture": "#cast_iron"}}},
+    {"from": [2, 13, 3], "to": [7, 15, 4], "faces": {"north": {"texture": "#blued_steel"}, "south": {"texture": "#blued_steel"}, "east": {"texture": "#blued_steel"}, "west": {"texture": "#blued_steel"}, "up": {"texture": "#blued_steel"}, "down": {"texture": "#blued_steel"}}},
+    {"from": [2, 13, 6], "to": [7, 15, 7], "faces": {"north": {"texture": "#blued_steel"}, "south": {"texture": "#blued_steel"}, "east": {"texture": "#blued_steel"}, "west": {"texture": "#blued_steel"}, "up": {"texture": "#blued_steel"}, "down": {"texture": "#blued_steel"}}},
+    {"from": [4, 13, 1], "to": [5, 14, 6], "faces": {"north": {"texture": "#iron_edge"}, "south": {"texture": "#iron_edge"}, "east": {"texture": "#iron_edge"}, "west": {"texture": "#iron_edge"}, "up": {"texture": "#iron_edge"}, "down": {"texture": "#iron_edge"}}},
+    {"from": [3, 12.5, 0.8], "to": [6, 13.5, 1.8], "faces": {"north": {"texture": "#copper"}, "south": {"texture": "#copper"}, "east": {"texture": "#copper"}, "west": {"texture": "#copper"}, "up": {"texture": "#copper"}, "down": {"texture": "#copper"}}}
+  ]
+}

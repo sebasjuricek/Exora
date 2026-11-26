@@ -1,0 +1,14 @@
+{
+  "type": "exora:manual",
+  "press": true,
+  "stage": 1,
+  "order": 2,
+  "materials": [
+    {
+      "item": "exora:drive_assembly"
+    }
+  ],
+  "result": {
+    "id": "exora:drive_assembly"
+  }
+}

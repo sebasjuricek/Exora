@@ -1,0 +1,21 @@
+{
+  "type": "exora:manual",
+  "stage": 3,
+  "order": 7,
+  "materials": [
+    {
+      "item": "exora:machine_casing"
+    },
+    {
+      "item": "exora:wound_core",
+      "count": 2
+    },
+    {
+      "item": "minecraft:glass"
+    }
+  ],
+  "result": {
+    "id": "exora:energy_buffer",
+    "count": 1
+  }
+}

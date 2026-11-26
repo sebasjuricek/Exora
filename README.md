@@ -4,7 +4,7 @@
 
 Exora is an industrial science-fiction mod for Minecraft 1.21.1. Players grow an Overworld workshop into an automated factory, build and maintain equipment, and use it to explore, solve problems, and take on original encounters. Later ages extend the factory into orbit, planets, and dimensions.
 
-**Development status.** The NeoForge scaffold and design are in place. The first gameplay milestone is a Workshop production loop that manufactures a useful part and unlocks Electrical.
+**Development status.** Workshop is playable from a fresh survival start. Build a bench and a hand press, commission a charcoal-powered Coil Mill, and use its first cores to store power. [Survival walkthrough and recipes](docs/WORKSHOP.md)
 
 ## Start here
 

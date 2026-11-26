@@ -1,0 +1,17 @@
+{
+  "type": "exora:manual",
+  "stage": 1,
+  "order": 3,
+  "materials": [
+    {
+      "item": "exora:shaft",
+      "count": 2
+    },
+    {
+      "item": "exora:iron_plate"
+    }
+  ],
+  "result": {
+    "id": "exora:drive_assembly"
+  }
+}

@@ -1,6 +1,6 @@
 # Exora architecture
 
-The single Gradle module targets Minecraft 1.21.1 with NeoForge and Java 21. `Exora` is the shared mod entry point. Use feature-local registration as content is added and compose it from the entry point. The current package files document intended ownership.
+The single Gradle module targets Minecraft 1.21.1 with NeoForge and Java 21. `Exora` is the shared mod entry point. Use feature-local registration as content is added and compose it from the entry point. The Workshop implementation establishes the first feature boundaries.
 
 | Package under `io.github.sebasjuricek.exora` | Owns |
 | --- | --- |
@@ -19,6 +19,13 @@ The single Gradle module targets Minecraft 1.21.1 with NeoForge and Java 21. `Ex
 ## Integration
 
 Machines consume material tags and expose supported capabilities. Logistics moves resources through these capabilities. Energy owns power behavior. Equipment and vehicles use parts and power through their own lifecycle code. Progression owns unlock checks used by manufacturing and workstation actions. Entities and world encounters award discovery evidence through a progression interface. Keep shared contracts near the feature that owns their behavior and avoid dependency cycles.
+
+### Workshop contracts
+
+- `machines.bench` reads ordered `exora:manual` plans. The menu reserves ingredients on the server and validates the current station, player distance, tier, tool, press state and live recipe before committing a button click. The press keeps its fitted drive in block state. A scheduled tick returns the ram.
+- `machines.powered` reads `exora:milling` recipes with one ingredient, a result stack, duration and FE cost per tick. Each machine keeps one committed workpiece and a snapshot of its recipe result. Editing a recipe affects future work. A finished tray retains its batch until a player or hopper extracts it.
+- `energy` owns adjacent capability lookup, local reservoirs and fuel. Each source caches up to six neighbor capability lookups and rotates its first output face. A generator's direct delivery to the mill marks FE eligible for commissioning. Ordinary NeoForge FE can run production. The meter reads the capability on the selected face.
+- `progression.WorkshopProgress` owns sequential, idempotent proofs in Overworld SavedData. The bench, press and mill report committed actions. The one-use mill receipt belongs to its finished batch. Automating extraction produces useful stock, while player collection can earn commissioning. See the [ownership and recovery rules](docs/WORKSHOP.md#shared-ownership).
 
 ### Design boundaries for future milestones
 

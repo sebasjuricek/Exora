@@ -1,0 +1,23 @@
+{
+  "type": "exora:manual",
+  "stage": 2,
+  "order": 5,
+  "materials": [
+    {
+      "item": "exora:machine_casing"
+    },
+    {
+      "item": "exora:copper_winding"
+    },
+    {
+      "item": "exora:shaft"
+    },
+    {
+      "item": "minecraft:furnace"
+    }
+  ],
+  "result": {
+    "id": "exora:starter_generator",
+    "count": 1
+  }
+}

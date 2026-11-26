@@ -1,32 +1,33 @@
 # Exora development handoff
 
-Use this as the starting point for a new contributor or coding chat. The [master design](MASTER_DESIGN.md), [progression spec](PROGRESSION.md), and [roadmap](../ROADMAP.md) hold the project decisions and acceptance criteria. Update this handoff when the active milestone or verification status changes.
+Workshop is implemented in the source checkout containing this file. The baseline was clean at `e1da953`. Development used the checked-in wrapper, Minecraft 1.21.1, NeoForge 21.1.267 and JDK 21. Gameplay and tests use the existing NeoForge dependencies. The [survival walkthrough](WORKSHOP.md) lists every required recipe, the optional shop fittings, the FE costs and the team rules.
 
-## Current state
+## What players can do
 
-- Exora targets Minecraft 1.21.1, NeoForge 21.1, and Java 21. The mod and resource namespace is `exora`. The Java package is `io.github.sebasjuricek.exora`.
-- The repository contains a loadable mod entry point, package boundaries, and build tooling. Gameplay implementation starts with Workshop. A clean Windows checkout completed `build` and `runData`. GitHub Actions built the JAR on Linux. The development server loaded Exora and reached a running test world. Interactive client, player joins, and multiplayer gameplay checks are pending.
-- The confirmed scope includes nine technology families. The proposed eight-age campaign completes its Overworld finale in Fusion before orbital and planetary industry. See the [catalog](../CONTENT_CATALOG.md) for named features and their proposed unlocks.
-- Exora's current scaffold has no additional runtime mod dependencies. The [source reviews](REFERENCES.md) document later candidates and their permissions and compatibility constraints.
+1. Craft the Workshop Bench and Stone Mallet from ordinary stock. Assemble the first Timber Frame to unlock the Hand Press.
+2. Turn iron into plates and shafts, build a drive and fit it to the press. A visible flywheel, faster return and four-batch strokes reward the installation. Spare stock also makes lanterns and hoppers.
+3. Build a Starter Generator and Coil Mill. Make two Wound Cores from a winding and collect them from the tray. The saved ledger opens Electrical. A Line Meter lets a player compare the charge on any supported face.
+4. Build and charge an Energy Buffer. It can move its charge with a pickaxe and operate the same mill away from the generator.
 
-## First playable milestone
+## Development entry points
 
-Follow [Workshop](PROGRESSION.md#1-workshop). Keep the first change centered on one complete path from common material stock to a useful part.
+- `machines/bench` implements the server-authoritative ledger menu and manual operations. Bench and press plans live in `data/exora/recipe/manual`. Each proof opens the ingredients and equipment needed for the following step.
+- `energy` owns generation, storage, transfer and station menus. `machines/powered` snapshots each consumed workpiece and its output. The three mill recipes live in `data/exora/recipe/milling`. Client screens and original models use the saved machine state.
+- `progression/WorkshopProgress` stores consecutive proofs for scoreboard teams and personal UUIDs in Overworld SavedData. A legitimate mill batch can earn one credit. An automated line can keep producing after that demonstration.
+- Use the [architecture](../ARCHITECTURE.md), [progression spec](PROGRESSION.md) and [roadmap](../ROADMAP.md) for future work. The next new gameplay milestone is Electrical Local Grid. Start with a short cable run that powers this existing mill from this existing buffer. Preserve the direct adjacent-generator commissioning proof.
 
-1. Establish one reusable material form with a vanilla-input recipe.
-2. Run one processing job on a starter generator and powered processor. Give players visible input, output, and power status so they can correct a blocked job.
-3. Record the completed job as the Workshop proof that unlocks Electrical. Test the starter flow in a fresh survival world and ensure the proof persists through a server restart.
+## Verification
 
-Use the [architecture](../ARCHITECTURE.md) when deciding where the power transfer, machine state, and team proof belong. Later ages can extend the same APIs once this flow works.
+The wrapper built the original scaffold and the bench, press and power implementation. The opt-in headless run passed seven dedicated-server GameTests. They exercise shared proof visibility, blocked manual operations, exact ingredient consumption, power failure, generator and mill state reconstruction, one-input teardown refunds, competing collectors, hopper operation, isolated stored power and charged-buffer harvesting. The test source set and its world template are excluded from the release JAR.
 
-## Before expanding
+The live fixture starts two real NeoForge clients in survival on one loopback dedicated server. It provides a harvestable oak log and a chest of ordinary raw materials to make the route repeatable. The operators use actual client interactions for crafting, smelting, placement, menu operations and collection. Their separate development directories hold the logs and screenshots. The recipe graph was also checked for tier reachability and downstream use of every intermediate. Exploration time and ore-finding balance still need a human survival session.
 
-| Decision or check | When it matters |
-| --- | --- |
-| First part and recipe | Choose one useful output and record the proposed input and recipe in the gameplay change. Exact costs and rates can be tuned after the full loop runs. |
-| Save and multiplayer behavior | Before the first release with progression, test blocked output, power loss, restart, and two players using a station or claiming the same proof. Treat released IDs and save formats as stable. |
-| Playtest setup | Use disposable worlds. The [contributor guide](../CONTRIBUTING.md) covers loopback for local offline-mode server checks and authenticated server setup for shared tests. Keep release saves and the CurseForge play instance separate from development runs. |
-| Licensing and assets | The repository is public and the mod metadata currently says All Rights Reserved. Make a licensing decision before inviting outside contributions or broad redistribution. For any proposed reused asset, check individual rights and provenance first. |
-| External libraries | Workshop can proceed with NeoForge. Evaluate an animation library when a concrete asset needs it and storage interoperability when there's a concrete transfer use case. Verify client, server, and save behavior before making an integration part of the default build. |
+## Last verified point
 
-For a fresh chat, point it at this file and `AGENTS.md`, then state which milestone you want to work on. Ask it to check the working tree and recent commits before treating this summary as current.
+On the live server, Fitter harvested a log, crafted the opening equipment, furnace-smelted stock, assembled the frame, fitted the press drive and made a four-batch stroke. Winder's open bench showed the shared proofs. After a restart Fitter built both powered machines and loaded two windings. With no fuel the mill retained the first workpiece at zero progress. The server then saved and shut down with the generator burning and the mill at 24 of 80 ticks. After startup the first batch finished with the next winding held behind its occupied tray. Winder collected the two cores and both clients received Electrical. Clearing the tray released the queued job.
+
+Fitter built the buffer with Winder's cores, charged it, harvested it with a stone pickaxe, removed the generator and placed the charged buffer beside the mill. Processing one iron ingot produced three plates. The resulting buffer held 3,904 of 4,096 FE, and the generator was in Fitter's inventory. Fitter also built the optional Line Meter and hopper and used the meter. After another clean server restart, each operator reopened the bench at three proofs. Leaving the scoreboard team gave Winder a fresh personal ledger and rejoining restored the completed team ledger.
+
+The final wrapper build and all seven GameTests passed. The release JAR was compared byte-for-byte against the built main classes and intended model, texture, recipe and language resources. Dedicated test fixtures are excluded. The build also ran data generation. The optional lantern plan was checked against the recipe graph. The live route used a supplied chest for bulk raw materials and scripted inputs on two real clients. For first-time pacing feedback, the next playtest is an unaided run in a random survival seed.
+
+Reproduce the [two-client sequence](../src/playtest/scenarios/README.md) or run `.\gradlew.bat -PworkshopPlaytest runWorkshopGameTest` from the checkout. Use `.\gradlew.bat runClient` for normal play. The release artifact is `build/libs/exora-0.1.0-SNAPSHOT.jar`.

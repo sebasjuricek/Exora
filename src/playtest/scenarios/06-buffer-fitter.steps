@@ -1,0 +1,24 @@
+equip empty
+use 6 161 5
+awaitstage 3
+shot fitter-electrical
+close
+use 7 161 7
+awaitslot 0 exora:wound_core 2
+shift 0
+close
+use 6 161 5
+assemble energy_buffer
+awaititem exora:energy_buffer 1
+close
+equip exora:energy_buffer
+use 3 160 5
+use 3 161 5
+wait 100
+shot charging-buffer
+close
+use 4 161 6
+awaitslot 1 exora:wound_core 2
+shift 1
+close
+mark charged_and_cleared

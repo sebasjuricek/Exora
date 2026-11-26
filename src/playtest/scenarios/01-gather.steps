@@ -1,0 +1,53 @@
+mine 7 161 5
+awaititem minecraft:oak_log 1
+mark harvested_wood
+use 7 161 7
+shift 0
+shift 1
+shift 2
+shift 3
+shift 4
+shift 5
+close
+recipe minecraft:oak_planks
+awaitslot 0 minecraft:oak_planks 4
+shift 0
+recipe minecraft:crafting_table
+awaitslot 0 minecraft:crafting_table 1
+shift 0
+equip minecraft:crafting_table
+use 6 160 7
+use 6 161 7
+recipe minecraft:furnace
+shift 0
+recipe minecraft:furnace
+shift 0
+recipe minecraft:oak_planks
+shift 0
+recipe minecraft:oak_planks
+shift 0
+recipe minecraft:oak_planks
+shift 0
+recipe minecraft:oak_planks
+shift 0
+recipe minecraft:oak_planks
+shift 0
+recipe minecraft:oak_planks
+shift 0
+recipe minecraft:oak_planks
+shift 0
+recipe minecraft:oak_planks
+shift 0
+recipe minecraft:stick
+shift 0
+recipe minecraft:stick
+shift 0
+recipe minecraft:stick
+shift 0
+recipe minecraft:stick
+shift 0
+recipe exora:mallet
+awaitslot 0 exora:mallet 1
+shift 0
+close
+mark mallet

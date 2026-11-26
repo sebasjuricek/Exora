@@ -1,0 +1,21 @@
+{
+  "type": "exora:manual",
+  "stage": 1,
+  "order": 1,
+  "materials": [
+    {
+      "item": "exora:timber_frame"
+    },
+    {
+      "item": "minecraft:cobblestone",
+      "count": 2
+    },
+    {
+      "item": "minecraft:stick",
+      "count": 2
+    }
+  ],
+  "result": {
+    "id": "exora:hand_press"
+  }
+}

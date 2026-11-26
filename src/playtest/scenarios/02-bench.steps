@@ -1,0 +1,36 @@
+close
+equip minecraft:furnace
+use 7 160 6
+use 7 161 6
+inspect
+shiftitem minecraft:coal
+clickitem minecraft:cobblestone
+right 0
+close
+use 7 161 6
+awaitslot 2 minecraft:stone 1
+shift 2
+shiftitem minecraft:raw_iron
+close
+use 6 161 7
+recipe exora:workshop_bench
+awaitslot 0 exora:workshop_bench 1
+shift 0
+close
+equip exora:workshop_bench
+use 6 160 5
+use 6 161 5
+awaitstage 0
+shot opening-bench
+assemble timber_frame
+awaititem exora:timber_frame 1
+awaitstage 1
+mark frame_proof
+shot frame-proof
+assemble hand_press
+awaititem exora:hand_press 1
+close
+equip exora:hand_press
+use 5 160 6
+inspect
+mark hand_press_placed

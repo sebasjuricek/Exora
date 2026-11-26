@@ -1,0 +1,16 @@
+wait 80
+equip empty
+use 4 161 6
+awaitslot 1 exora:wound_core 2
+shot blocked-after-restart
+shift 1
+awaititem exora:wound_core 2
+mark collected_commission
+close
+use 7 161 7
+shiftitem exora:wound_core
+close
+use 6 161 5
+awaitstage 3
+shot electrical-ledger
+mark shared_electrical

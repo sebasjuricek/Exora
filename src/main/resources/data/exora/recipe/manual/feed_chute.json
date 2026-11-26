@@ -1,0 +1,18 @@
+{
+  "type": "exora:manual",
+  "stage": 1,
+  "order": 10,
+  "materials": [
+    {
+      "item": "exora:timber_frame"
+    },
+    {
+      "item": "exora:iron_plate",
+      "count": 2
+    }
+  ],
+  "result": {
+    "id": "minecraft:hopper",
+    "count": 1
+  }
+}

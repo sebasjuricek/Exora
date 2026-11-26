@@ -1,0 +1,6 @@
+{
+  "parent": "exora:block/coil_mill",
+  "textures": {
+    "mill_idle": "exora:block/mill_unrecognized"
+  }
+}

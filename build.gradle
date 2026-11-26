@@ -84,3 +84,7 @@ tasks.named('jar', Jar) {
     preserveFileTimestamps = false
     reproducibleFileOrder = true
 }
+
+if (providers.gradleProperty('workshopPlaytest').isPresent()) {
+    apply from: 'gradle/workshop-playtest.gradle'
+}

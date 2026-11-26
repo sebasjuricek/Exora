@@ -1,0 +1,63 @@
+use 7 161 6
+awaitslot 2 minecraft:iron_ingot 18
+shift 2
+shiftitem minecraft:raw_copper
+close
+use 5 161 6
+assemble iron_plate
+awaititem exora:iron_plate 4
+wait 20
+assemble shaft
+awaititem exora:shaft 2
+close
+use 6 161 5
+assemble drive_assembly
+awaititem exora:drive_assembly 1
+close
+use 5 161 6
+assemble install_drive
+awaitstage 2
+mark drive_installed
+shot geared-press
+assemble iron_plate bulk
+awaititem exora:iron_plate 19
+wait 12
+assemble shaft
+wait 12
+assemble shaft
+awaititem exora:shaft 4
+close
+use 7 161 6
+awaitslot 2 minecraft:copper_ingot 6
+shift 2
+shiftitem minecraft:sand
+close
+use 6 161 5
+assemble timber_frame
+assemble timber_frame
+assemble timber_frame
+assemble machine_casing
+assemble machine_casing
+assemble machine_casing
+assemble drive_assembly
+assemble copper_winding
+assemble copper_winding
+awaititem exora:machine_casing 3
+awaititem exora:copper_winding 4
+awaititem exora:drive_assembly 1
+close
+use 7 161 6
+awaitslot 2 minecraft:glass 4
+shift 2
+shiftitem minecraft:oak_log
+close
+use 6 161 7
+recipe minecraft:stone_pickaxe
+awaitslot 0 minecraft:stone_pickaxe 1
+shift 0
+close
+use 7 161 6
+awaitslot 2 minecraft:charcoal 2
+shift 2
+close
+mark metal_shop_stock

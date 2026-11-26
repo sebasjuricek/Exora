@@ -1,0 +1,79 @@
+{
+  "variants": {
+    "facing=north,status=idle": {
+      "model": "exora:block/coil_mill"
+    },
+    "facing=east,status=idle": {
+      "model": "exora:block/coil_mill",
+      "y": 90
+    },
+    "facing=south,status=idle": {
+      "model": "exora:block/coil_mill",
+      "y": 180
+    },
+    "facing=west,status=idle": {
+      "model": "exora:block/coil_mill",
+      "y": 270
+    },
+    "facing=north,status=running": {
+      "model": "exora:block/coil_mill_running"
+    },
+    "facing=east,status=running": {
+      "model": "exora:block/coil_mill_running",
+      "y": 90
+    },
+    "facing=south,status=running": {
+      "model": "exora:block/coil_mill_running",
+      "y": 180
+    },
+    "facing=west,status=running": {
+      "model": "exora:block/coil_mill_running",
+      "y": 270
+    },
+    "facing=north,status=no_power": {
+      "model": "exora:block/coil_mill_no_power"
+    },
+    "facing=east,status=no_power": {
+      "model": "exora:block/coil_mill_no_power",
+      "y": 90
+    },
+    "facing=south,status=no_power": {
+      "model": "exora:block/coil_mill_no_power",
+      "y": 180
+    },
+    "facing=west,status=no_power": {
+      "model": "exora:block/coil_mill_no_power",
+      "y": 270
+    },
+    "facing=north,status=blocked": {
+      "model": "exora:block/coil_mill_blocked"
+    },
+    "facing=east,status=blocked": {
+      "model": "exora:block/coil_mill_blocked",
+      "y": 90
+    },
+    "facing=south,status=blocked": {
+      "model": "exora:block/coil_mill_blocked",
+      "y": 180
+    },
+    "facing=west,status=blocked": {
+      "model": "exora:block/coil_mill_blocked",
+      "y": 270
+    },
+    "facing=north,status=unrecognized": {
+      "model": "exora:block/coil_mill_unrecognized"
+    },
+    "facing=east,status=unrecognized": {
+      "model": "exora:block/coil_mill_unrecognized",
+      "y": 90
+    },
+    "facing=south,status=unrecognized": {
+      "model": "exora:block/coil_mill_unrecognized",
+      "y": 180
+    },
+    "facing=west,status=unrecognized": {
+      "model": "exora:block/coil_mill_unrecognized",
+      "y": 270
+    }
+  }
+}

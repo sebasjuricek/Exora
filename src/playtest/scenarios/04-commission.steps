@@ -1,0 +1,22 @@
+wait 60
+equip empty
+use 6 161 5
+wait 12
+awaitstage 2
+mark team_restart_before_power
+assemble starter_generator
+assemble coil_mill
+awaititem exora:starter_generator 1
+awaititem exora:coil_mill 1
+close
+equip exora:starter_generator
+use 4 160 5
+equip exora:coil_mill
+use 4 160 6
+use 4 161 6
+shiftitem exora:copper_winding
+wait 10
+awaitslot 0 exora:copper_winding 1
+inspect
+shot mill-no-power
+mark waiting_for_generator

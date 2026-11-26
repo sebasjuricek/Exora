@@ -1,0 +1,6 @@
+{
+  "parent": "exora:block/energy_buffer",
+  "textures": {
+    "charge_empty": "exora:block/charge_full"
+  }
+}

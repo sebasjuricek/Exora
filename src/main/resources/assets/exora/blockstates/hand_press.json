@@ -1,0 +1,121 @@
+{
+  "multipart": [
+    {
+      "when": {
+        "facing": "north",
+        "pressed": "false"
+      },
+      "apply": {
+        "model": "exora:block/hand_press"
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "pressed": "true"
+      },
+      "apply": {
+        "model": "exora:block/hand_press_down"
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "driven": "true"
+      },
+      "apply": {
+        "model": "exora:block/press_flywheel"
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "pressed": "false"
+      },
+      "apply": {
+        "model": "exora:block/hand_press",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "pressed": "true"
+      },
+      "apply": {
+        "model": "exora:block/hand_press_down",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "driven": "true"
+      },
+      "apply": {
+        "model": "exora:block/press_flywheel",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "pressed": "false"
+      },
+      "apply": {
+        "model": "exora:block/hand_press",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "pressed": "true"
+      },
+      "apply": {
+        "model": "exora:block/hand_press_down",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "driven": "true"
+      },
+      "apply": {
+        "model": "exora:block/press_flywheel",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "pressed": "false"
+      },
+      "apply": {
+        "model": "exora:block/hand_press",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "pressed": "true"
+      },
+      "apply": {
+        "model": "exora:block/hand_press_down",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "driven": "true"
+      },
+      "apply": {
+        "model": "exora:block/press_flywheel",
+        "y": 270
+      }
+    }
+  ]
+}

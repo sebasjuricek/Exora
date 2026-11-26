@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "particle": "exora:block/blued_steel",
+    "cast_iron": "exora:block/cast_iron",
+    "charge_empty": "exora:block/charge_empty",
+    "copper": "exora:block/copper",
+    "enamel": "exora:block/enamel",
+    "iron_edge": "exora:block/iron_edge",
+    "soapstone": "exora:block/soapstone"
+  },
+  "elements": [
+    {"from": [1, 0, 1], "to": [15, 2, 15], "faces": {"north": {"texture": "#cast_iron"}, "south": {"texture": "#cast_iron"}, "east": {"texture": "#cast_iron"}, "west": {"texture": "#cast_iron"}, "up": {"texture": "#cast_iron"}, "down": {"texture": "#cast_iron"}}},
+    {"from": [2, 2, 2], "to": [14, 4, 14], "faces": {"north": {"texture": "#enamel"}, "south": {"texture": "#enamel"}, "east": {"texture": "#enamel"}, "west": {"texture": "#enamel"}, "up": {"texture": "#enamel"}, "down": {"texture": "#enamel"}}},
+    {"from": [3, 4, 3], "to": [7, 11, 13], "faces": {"north": {"texture": "#enamel"}, "south": {"texture": "#enamel"}, "east": {"texture": "#enamel"}, "west": {"texture": "#enamel"}, "up": {"texture": "#enamel"}, "down": {"texture": "#enamel"}}},
+    {"from": [3, 5, 2.75], "to": [7, 6, 13.25], "faces": {"north": {"texture": "#copper"}, "south": {"texture": "#copper"}, "east": {"texture": "#copper"}, "west": {"texture": "#copper"}, "up": {"texture": "#copper"}, "down": {"texture": "#copper"}}},
+    {"from": [3, 9, 2.75], "to": [7, 10, 13.25], "faces": {"north": {"texture": "#copper"}, "south": {"texture": "#copper"}, "east": {"texture": "#copper"}, "west": {"texture": "#copper"}, "up": {"texture": "#copper"}, "down": {"texture": "#copper"}}},
+    {"from": [3, 11, 3], "to": [7, 12, 13], "faces": {"north": {"texture": "#iron_edge"}, "south": {"texture": "#iron_edge"}, "east": {"texture": "#iron_edge"}, "west": {"texture": "#iron_edge"}, "up": {"texture": "#iron_edge"}, "down": {"texture": "#iron_edge"}}},
+    {"from": [3.5, 12, 4], "to": [6.5, 13, 7], "faces": {"north": {"texture": "#soapstone"}, "south": {"texture": "#soapstone"}, "east": {"texture": "#soapstone"}, "west": {"texture": "#soapstone"}, "up": {"texture": "#soapstone"}, "down": {"texture": "#soapstone"}}},
+    {"from": [4, 13, 4.5], "to": [6, 15, 6.5], "faces": {"north": {"texture": "#copper"}, "south": {"texture": "#copper"}, "east": {"texture": "#copper"}, "west": {"texture": "#copper"}, "up": {"texture": "#copper"}, "down": {"texture": "#copper"}}},
+    {"from": [3, 14, 4], "to": [7, 15, 7], "faces": {"north": {"texture": "#soapstone"}, "south": {"texture": "#soapstone"}, "east": {"texture": "#soapstone"}, "west": {"texture": "#soapstone"}, "up": {"texture": "#soapstone"}, "down": {"texture": "#soapstone"}}},
+    {"from": [9, 4, 3], "to": [13, 11, 13], "faces": {"north": {"texture": "#enamel"}, "south": {"texture": "#enamel"}, "east": {"texture": "#enamel"}, "west": {"texture": "#enamel"}, "up": {"texture": "#enamel"}, "down": {"texture": "#enamel"}}},
+    {"from": [9, 5, 2.75], "to": [13, 6, 13.25], "faces": {"north": {"texture": "#copper"}, "south": {"texture": "#copper"}, "east": {"texture": "#copper"}, "west": {"texture": "#copper"}, "up": {"texture": "#copper"}, "down": {"texture": "#copper"}}},
+    {"from": [9, 9, 2.75], "to": [13, 10, 13.25], "faces": {"north": {"texture": "#copper"}, "south": {"texture": "#copper"}, "east": {"texture": "#copper"}, "west": {"texture": "#copper"}, "up": {"texture": "#copper"}, "down": {"texture": "#copper"}}},
+    {"from": [9, 11, 3], "to": [13, 12, 13], "faces": {"north": {"texture": "#iron_edge"}, "south": {"texture": "#iron_edge"}, "east": {"texture": "#iron_edge"}, "west": {"texture": "#iron_edge"}, "up": {"texture": "#iron_edge"}, "down": {"texture": "#iron_edge"}}},
+    {"from": [9.5, 12, 4], "to": [12.5, 13, 7], "faces": {"north": {"texture": "#soapstone"}, "south": {"texture": "#soapstone"}, "east": {"texture": "#soapstone"}, "west": {"texture": "#soapstone"}, "up": {"texture": "#soapstone"}, "down": {"texture": "#soapstone"}}},
+    {"from": [10, 13, 4.5], "to": [12, 15, 6.5], "faces": {"north": {"texture": "#copper"}, "south": {"texture": "#copper"}, "east": {"texture": "#copper"}, "west": {"texture": "#copper"}, "up": {"texture": "#copper"}, "down": {"texture": "#copper"}}},
+    {"from": [9, 14, 4], "to": [13, 15, 7], "faces": {"north": {"texture": "#soapstone"}, "south": {"texture": "#soapstone"}, "east": {"texture": "#soapstone"}, "west": {"texture": "#soapstone"}, "up": {"texture": "#soapstone"}, "down": {"texture": "#soapstone"}}},
+    {"from": [4, 15, 5], "to": [12, 16, 6], "faces": {"north": {"texture": "#copper"}, "south": {"texture": "#copper"}, "east": {"texture": "#copper"}, "west": {"texture": "#copper"}, "up": {"texture": "#copper"}, "down": {"texture": "#copper"}}},
+    {"from": [4, 4, 2], "to": [12, 8, 3], "faces": {"north": {"texture": "#charge_empty", "uv": [0, 0, 16, 16]}, "south": {"texture": "#cast_iron"}, "east": {"texture": "#cast_iron"}, "west": {"texture": "#cast_iron"}, "up": {"texture": "#cast_iron"}, "down": {"texture": "#cast_iron"}}}
+  ]
+}

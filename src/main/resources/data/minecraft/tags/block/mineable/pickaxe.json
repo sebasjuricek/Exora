@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "exora:hand_press",
+    "exora:starter_generator",
+    "exora:coil_mill",
+    "exora:energy_buffer"
+  ]
+}

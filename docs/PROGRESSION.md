@@ -4,13 +4,13 @@ Start with the [master design](MASTER_DESIGN.md) for the confirmed scope, then u
 
 **Confirmed requirements.** Exora has eight sequential technological ages with internal tiers. Manufacturing is moderately complex, earlier production stays useful, automation replaces repeated manual work, and one readable mainline ties together the technology branches. Progression blends production with authored Overworld encounters before opening space and later dimensions. The technology families listed in the master design are confirmed end goals.
 
-**Proposed specification.** The names, tier placements, materials, sites, recipes, equipment behavior, and acceptance thresholds below are design proposals. Every "required" input or proof describes the proposed default survival path. Quantities, balance, data IDs, and technical dependencies are left for implementation and playtesting. The current repository contains the project scaffold.
+**Proposed specification.** Workshop and the first Electrical buffer follow the implemented route. Later tier placements, materials, sites, equipment and acceptance thresholds are design proposals. Every "required" input or proof describes the proposed default survival path. The Workshop guide lists the current costs and operating rates. Balance for later ages remains open.
 
 ## Mainline at a glance
 
 | Age | Three internal tiers | Proof that advances the team |
 | --- | --- | --- |
-| [1. Workshop](#1-workshop) | 1.1 Salvage · 1.2 Metalwork · 1.3 Starter Power | Complete one powered processing job and record its output |
+| [1. Workshop](#1-workshop) | 1.1 Workbench · 1.2 Metalwork · 1.3 Starter Power | Collect Wound Cores from a Coil Mill job powered by a Starter Generator |
 | [2. Electrical](#2-electrical) | 2.1 Local Grid · 2.2 Production Line · 2.3 Survey Network | Deliver an automated batch to restore an Overworld survey station |
 | [3. Mechanized](#3-mechanized) | 3.1 Precision · 3.2 Surface Industry · 3.3 Industrial Control | Commission a service route and recover the relay record |
 | [4. Aerospace](#4-aerospace) | 4.1 Flight · 4.2 Expedition Systems · 4.3 Remote Science | Restore the remote beacon and return its survey data |
@@ -51,17 +51,15 @@ These six branches share the age sequence. A branch can provide a required capab
 
 ## 1. Workshop
 
-**Required inputs.** Wood, stone, charcoal, clay, iron, and copper. Make basic plates and a simple drive from shared stock. Bronze or another early alloy can provide an efficiency sidegrade.
+**Survival inputs.** Gather timber, cobblestone, iron, copper, charcoal and a little glass. Three hands-on proofs unlock plans at a shared bench. The chapter plays out wherever the player chooses to build their shop. [Walkthrough, full recipe graph and team rules](WORKSHOP.md)
 
-| Tier | Machines, processes, and power | Unlocks and capability | Proof |
-| --- | --- | --- | --- |
-| 1.1 Salvage | Workshop bench and basic sorting. Begin with hand work and vanilla furnace fuel. | Survey kit, repair tools, and a team ledger for discoveries. | Log an ore survey or workshop salvage and restore a bench. |
-| 1.2 Metalwork | Alloy furnace and mechanical press make reusable plates, frames, and drives. | Hand tools, reinforced storage, and a service part for old equipment. | Fit a workshop part made from processed stock. |
-| 1.3 Starter Power | Starter generator, short power connection, and basic powered processor. | First powered utility part and a readable machine status panel. | Use the generator to complete and collect one actual processing job. |
+| Tier | New capability | Proof and payoff |
+| --- | --- | --- |
+| 1.1 Workbench | Craft a Workshop Bench and reusable Stone Mallet. The ledger shows plans, stock on hand and the current objective. | Assemble a Timber Frame at the bench. Use the frame to build the Hand Press. |
+| 1.2 Metalwork | Use two press dies for plates and shafts. Build casings, drives and copper windings. Use spare stock for lanterns and hoppers. | Fit a Drive Assembly to the press. Its flywheel enables faster, four-batch strokes and opens the generator and mill plans. |
+| 1.3 Starter Power | Fuel the Starter Generator with charcoal. A touching Coil Mill turns stock into cores and makes plates and windings more efficiently. A Line Meter samples stored energy. | Take Wound Cores from a completed generator-powered job. The bench records commissioning and opens the Energy Buffer plan. |
 
-**World and challenges.** A ruined workshop and a salvageable maintenance automaton teach inspection and repair. Surface salvage and a craftable survey kit give a deterministic replacement route if a site is depleted.
-
-**Advance to Electrical.** The 1.3 job is the age proof. The processor and generator are already available in Workshop. Repair the input, power, or output condition and repeat the job if it stalls.
+**Electrical handoff.** Build a buffer with the commissioned cores. Charge it, disconnect the generator and run the mill from stored FE. Power loss pauses the current workpiece. An occupied tray holds back the next batch. Feed and extraction hoppers give the shop an ongoing production role.
 
 ## 2. Electrical
 

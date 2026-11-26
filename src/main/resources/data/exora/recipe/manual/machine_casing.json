@@ -1,0 +1,17 @@
+{
+  "type": "exora:manual",
+  "stage": 1,
+  "order": 4,
+  "materials": [
+    {
+      "item": "exora:timber_frame"
+    },
+    {
+      "item": "exora:iron_plate",
+      "count": 2
+    }
+  ],
+  "result": {
+    "id": "exora:machine_casing"
+  }
+}

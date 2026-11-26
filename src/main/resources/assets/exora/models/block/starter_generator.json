@@ -1,0 +1,27 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "particle": "exora:block/blued_steel",
+    "blued_steel": "exora:block/blued_steel",
+    "cast_iron": "exora:block/cast_iron",
+    "copper": "exora:block/copper",
+    "enamel": "exora:block/enamel",
+    "firebox_cold": "exora:block/firebox_cold",
+    "grille": "exora:block/grille",
+    "iron_edge": "exora:block/iron_edge"
+  },
+  "elements": [
+    {"from": [0, 0, 1], "to": [16, 2, 15], "faces": {"north": {"texture": "#cast_iron"}, "south": {"texture": "#cast_iron"}, "east": {"texture": "#cast_iron"}, "west": {"texture": "#cast_iron"}, "up": {"texture": "#cast_iron"}, "down": {"texture": "#cast_iron"}}},
+    {"from": [1, 2, 2], "to": [15, 11, 14], "faces": {"north": {"texture": "#enamel"}, "south": {"texture": "#enamel"}, "east": {"texture": "#enamel"}, "west": {"texture": "#enamel"}, "up": {"texture": "#enamel"}, "down": {"texture": "#enamel"}}},
+    {"from": [2, 3, 1], "to": [11, 10, 2], "faces": {"north": {"texture": "#firebox_cold", "uv": [0, 0, 16, 16]}, "south": {"texture": "#blued_steel"}, "east": {"texture": "#blued_steel"}, "west": {"texture": "#blued_steel"}, "up": {"texture": "#blued_steel"}, "down": {"texture": "#blued_steel"}}},
+    {"from": [11, 3, 1], "to": [14, 10, 2], "faces": {"north": {"texture": "#grille", "uv": [0, 0, 16, 16]}, "south": {"texture": "#copper"}, "east": {"texture": "#copper"}, "west": {"texture": "#copper"}, "up": {"texture": "#copper"}, "down": {"texture": "#copper"}}},
+    {"from": [1, 11, 2], "to": [15, 12, 14], "faces": {"north": {"texture": "#blued_steel"}, "south": {"texture": "#blued_steel"}, "east": {"texture": "#blued_steel"}, "west": {"texture": "#blued_steel"}, "up": {"texture": "#blued_steel"}, "down": {"texture": "#blued_steel"}}},
+    {"from": [3, 12, 8], "to": [7, 15, 12], "faces": {"north": {"texture": "#cast_iron"}, "south": {"texture": "#cast_iron"}, "east": {"texture": "#cast_iron"}, "west": {"texture": "#cast_iron"}, "up": {"texture": "#cast_iron"}, "down": {"texture": "#cast_iron"}}},
+    {"from": [2, 15, 7], "to": [8, 16, 13], "faces": {"north": {"texture": "#iron_edge"}, "south": {"texture": "#iron_edge"}, "east": {"texture": "#iron_edge"}, "west": {"texture": "#iron_edge"}, "up": {"texture": "#iron_edge"}, "down": {"texture": "#iron_edge"}}},
+    {"from": [3, 16, 8], "to": [7, 16, 12], "faces": {"north": {"texture": "#cast_iron"}, "south": {"texture": "#cast_iron"}, "east": {"texture": "#cast_iron"}, "west": {"texture": "#cast_iron"}, "up": {"texture": "#cast_iron"}, "down": {"texture": "#cast_iron"}}},
+    {"from": [10, 12, 4], "to": [13, 13, 8], "faces": {"north": {"texture": "#copper"}, "south": {"texture": "#copper"}, "east": {"texture": "#copper"}, "west": {"texture": "#copper"}, "up": {"texture": "#copper"}, "down": {"texture": "#copper"}}},
+    {"from": [14.5, 3, 4], "to": [15.5, 10, 5], "faces": {"north": {"texture": "#iron_edge"}, "south": {"texture": "#iron_edge"}, "east": {"texture": "#iron_edge"}, "west": {"texture": "#iron_edge"}, "up": {"texture": "#iron_edge"}, "down": {"texture": "#iron_edge"}}},
+    {"from": [14.5, 3, 7], "to": [15.5, 10, 8], "faces": {"north": {"texture": "#iron_edge"}, "south": {"texture": "#iron_edge"}, "east": {"texture": "#iron_edge"}, "west": {"texture": "#iron_edge"}, "up": {"texture": "#iron_edge"}, "down": {"texture": "#iron_edge"}}},
+    {"from": [14.5, 3, 10], "to": [15.5, 10, 11], "faces": {"north": {"texture": "#iron_edge"}, "south": {"texture": "#iron_edge"}, "east": {"texture": "#iron_edge"}, "west": {"texture": "#iron_edge"}, "up": {"texture": "#iron_edge"}, "down": {"texture": "#iron_edge"}}}
+  ]
+}

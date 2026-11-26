@@ -1,0 +1,18 @@
+{
+  "type": "exora:manual",
+  "stage": 1,
+  "order": 9,
+  "materials": [
+    {
+      "item": "exora:iron_plate"
+    },
+    {
+      "item": "minecraft:torch",
+      "count": 2
+    }
+  ],
+  "result": {
+    "id": "minecraft:lantern",
+    "count": 2
+  }
+}

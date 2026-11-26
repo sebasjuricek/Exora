@@ -4,7 +4,7 @@ Exora is an industrial technology and science-fiction Minecraft mod. Players gro
 
 ## Confirmed end goals
 
-These families define Exora's intended scope. Individual recipes, names, statistics, exact unlocks, and delivery dates are proposals until playtesting. Gameplay development begins with the first industrial slice.
+These families define Exora's intended scope. Individual recipes, names, statistics, exact unlocks, and delivery dates are proposals until playtesting. The first playable age is Workshop. Later ages build on its production and research contracts.
 
 | Family | End goal |
 | --- | --- |
@@ -22,7 +22,9 @@ The [content catalog](../CONTENT_CATALOG.md) connects each family to a proposed 
 
 ## Player loop
 
-**Survey → process → automate → research → equip → explore.** Field discoveries and demonstrated production feed research. Research offers a capability the player can manufacture, put to work, and service. Each age adds a useful way to solve a factory or expedition problem. Earlier materials remain useful as stock, spare parts, or remote infrastructure.
+**Build → process → automate → research → equip → explore.** The first bench, press and generator are player-built from ordinary survival stock. The opening culminates in a commissioned Coil Mill and portable stored power. [Workshop field guide](WORKSHOP.md)
+
+Field discoveries and demonstrated production feed research. Research offers a capability the player can manufacture, put to work, and service. Each age adds a useful way to solve a factory or expedition problem. Earlier materials remain useful as stock, spare parts, or remote infrastructure.
 
 Use GregTech-inspired sequential ages and reusable material forms. Use HBM-inspired manufacturing with visible machine states, transport, protected facilities, and field equipment. Keep the recipe graph legible. Reuse plates, frames, drives, controllers, and energy cells across the factory. Increase complexity through new processes, installations, and automation.
 

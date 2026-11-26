@@ -1,0 +1,27 @@
+// Opt-in development fixtures. The release JAR only contains sourceSets.main.
+def playtest = sourceSets.create('playtest')
+neoForge.addModdingDependenciesTo(playtest)
+dependencies.add(playtest.implementationConfigurationName, sourceSets.main.output)
+neoForge.mods.named(project.mod_id) { sourceSet playtest }
+
+neoForge.runs {
+    workshopGameTest {
+        type = 'gameTestServer'
+        gameDirectory = file('run-workshop-gametest')
+        systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
+    }
+    workshopServer {
+        server()
+        gameDirectory = file('run-workshop-server')
+        programArgument '--nogui'
+    }
+    ['Fitter', 'Winder'].each { operator ->
+        register("workshop${operator}") {
+            client()
+            gameDirectory = file("run-workshop-${operator}")
+            programArguments.addAll '--username', operator, '--quickPlayMultiplayer', '127.0.0.1:25641',
+                    '--width', '854', '--height', '480'
+            jvmArgument '-Xmx1500m'
+        }
+    }
+}

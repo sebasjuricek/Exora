@@ -21,3 +21,9 @@ Data generation uses `run-data/` and writes generated resources under `src/gener
 2. Run the build. For changes that players can interact with, exercise the changed flow in a disposable world. For changes to common code, persistence, networking, or shared progression, cover dedicated-server behavior as well.
 3. In the pull request, describe the player-visible change, checks you ran, and any effect on saves, registry IDs, or dependencies. Link to the affected design or roadmap entry when relevant. [GitHub's pull request template instructions](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository)
 4. Check GitHub Actions. CI runs the Linux JDK 21 build and uploads the JAR. Use the pull request to record any in-game checks alongside CI results.
+
+## Workshop verification
+
+From the source checkout run `.\gradlew.bat -PworkshopPlaytest runWorkshopGameTest` for the dedicated-server regression suite. The fixture gets its own `run-workshop-gametest/` world. Use `.\gradlew.bat runClient` for normal interactive development.
+
+The optional two-client fixture uses `runWorkshopServer`, `runWorkshopFitter` and `runWorkshopWinder` with `-PworkshopPlaytest`, each from a separate terminal. For a disposable local test set `server-ip=127.0.0.1`, `server-port=25641`, `online-mode=false`, `gamemode=survival` and `spawn-protection=0` in `run-workshop-server/server.properties`. The files under `src/playtest/scenarios` describe the test platform and client actions. Apply the setup commands only inside the disposable world. Once both clients join, copy a step sequence into the intended client's run directory as `workshop.steps`. Watch the client's log for its pass marker before continuing. [Verification record](docs/HANDOFF.md)

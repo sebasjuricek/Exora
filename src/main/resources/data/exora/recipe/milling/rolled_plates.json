@@ -1,0 +1,12 @@
+{
+  "type": "exora:milling",
+  "ingredient": {
+    "item": "minecraft:iron_ingot"
+  },
+  "result": {
+    "id": "exora:iron_plate",
+    "count": 3
+  },
+  "ticks": 48,
+  "energy_per_tick": 4
+}

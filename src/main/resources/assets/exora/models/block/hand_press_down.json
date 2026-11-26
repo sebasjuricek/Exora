@@ -1,0 +1,25 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "particle": "exora:block/blued_steel",
+    "blued_steel": "exora:block/blued_steel",
+    "cast_iron": "exora:block/cast_iron",
+    "enamel": "exora:block/enamel",
+    "iron_edge": "exora:block/iron_edge",
+    "oiled_timber": "exora:block/oiled_timber"
+  },
+  "elements": [
+    {"from": [1, 0, 1], "to": [15, 2, 15], "faces": {"north": {"texture": "#cast_iron"}, "south": {"texture": "#cast_iron"}, "east": {"texture": "#cast_iron"}, "west": {"texture": "#cast_iron"}, "up": {"texture": "#cast_iron"}, "down": {"texture": "#cast_iron"}}},
+    {"from": [1, 2, 9], "to": [4, 13, 14], "faces": {"north": {"texture": "#enamel"}, "south": {"texture": "#enamel"}, "east": {"texture": "#enamel"}, "west": {"texture": "#enamel"}, "up": {"texture": "#enamel"}, "down": {"texture": "#enamel"}}},
+    {"from": [12, 2, 9], "to": [15, 13, 14], "faces": {"north": {"texture": "#enamel"}, "south": {"texture": "#enamel"}, "east": {"texture": "#enamel"}, "west": {"texture": "#enamel"}, "up": {"texture": "#enamel"}, "down": {"texture": "#enamel"}}},
+    {"from": [1, 12, 4], "to": [15, 14, 14], "faces": {"north": {"texture": "#enamel"}, "south": {"texture": "#enamel"}, "east": {"texture": "#enamel"}, "west": {"texture": "#enamel"}, "up": {"texture": "#enamel"}, "down": {"texture": "#enamel"}}},
+    {"from": [4, 2, 3], "to": [12, 3, 11], "faces": {"north": {"texture": "#iron_edge"}, "south": {"texture": "#iron_edge"}, "east": {"texture": "#iron_edge"}, "west": {"texture": "#iron_edge"}, "up": {"texture": "#iron_edge"}, "down": {"texture": "#iron_edge"}}},
+    {"from": [6, 3, 4], "to": [10, 4, 9], "faces": {"north": {"texture": "#cast_iron"}, "south": {"texture": "#cast_iron"}, "east": {"texture": "#cast_iron"}, "west": {"texture": "#cast_iron"}, "up": {"texture": "#cast_iron"}, "down": {"texture": "#cast_iron"}}},
+    {"from": [5, 14, 6], "to": [11, 15, 10], "faces": {"north": {"texture": "#cast_iron"}, "south": {"texture": "#cast_iron"}, "east": {"texture": "#cast_iron"}, "west": {"texture": "#cast_iron"}, "up": {"texture": "#cast_iron"}, "down": {"texture": "#cast_iron"}}},
+    {"from": [7, 14, 7], "to": [9, 16, 9], "faces": {"north": {"texture": "#iron_edge"}, "south": {"texture": "#iron_edge"}, "east": {"texture": "#iron_edge"}, "west": {"texture": "#iron_edge"}, "up": {"texture": "#iron_edge"}, "down": {"texture": "#iron_edge"}}},
+    {"from": [3, 15, 7], "to": [13, 16, 8], "faces": {"north": {"texture": "#iron_edge"}, "south": {"texture": "#iron_edge"}, "east": {"texture": "#iron_edge"}, "west": {"texture": "#iron_edge"}, "up": {"texture": "#iron_edge"}, "down": {"texture": "#iron_edge"}}},
+    {"from": [12, 14, 6], "to": [14, 16, 9], "faces": {"north": {"texture": "#oiled_timber"}, "south": {"texture": "#oiled_timber"}, "east": {"texture": "#oiled_timber"}, "west": {"texture": "#oiled_timber"}, "up": {"texture": "#oiled_timber"}, "down": {"texture": "#oiled_timber"}}},
+    {"from": [7, 6, 6], "to": [9, 12, 8], "faces": {"north": {"texture": "#iron_edge"}, "south": {"texture": "#iron_edge"}, "east": {"texture": "#iron_edge"}, "west": {"texture": "#iron_edge"}, "up": {"texture": "#iron_edge"}, "down": {"texture": "#iron_edge"}}},
+    {"from": [5, 4, 4], "to": [11, 6, 10], "faces": {"north": {"texture": "#blued_steel"}, "south": {"texture": "#blued_steel"}, "east": {"texture": "#blued_steel"}, "west": {"texture": "#blued_steel"}, "up": {"texture": "#blued_steel"}, "down": {"texture": "#blued_steel"}}}
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "type": "exora:milling",
+  "ingredient": {
+    "item": "exora:copper_winding"
+  },
+  "result": {
+    "id": "exora:wound_core",
+    "count": 2
+  },
+  "ticks": 80,
+  "energy_per_tick": 4
+}

@@ -1,0 +1,12 @@
+{
+  "type": "exora:milling",
+  "ingredient": {
+    "item": "minecraft:copper_ingot"
+  },
+  "result": {
+    "id": "exora:copper_winding",
+    "count": 4
+  },
+  "ticks": 56,
+  "energy_per_tick": 4
+}
