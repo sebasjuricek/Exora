@@ -28,6 +28,8 @@ Field discoveries and demonstrated production feed research. Research offers a c
 
 Use GregTech-inspired sequential ages and reusable material forms. Use HBM-inspired manufacturing with visible machine states, transport, protected facilities, and field equipment. Keep the recipe graph legible. Reuse plates, frames, drives, controllers, and energy cells across the factory. Increase complexity through new processes, installations, and automation.
 
+Give each age one memorable engineering accomplishment that the player builds toward, can see working, and can use afterward. Let those moments grow with the scale of the technology. Workshop's mill runs on saved charge, Electrical's First Signal lights a mast from a shop-built grid, Mechanized can complete a repeatable cargo delivery, and the first orbital trip can return the crew safely. Prioritize a clear action and a useful result when designing each age's payoff. [Electrical design brief](ELECTRICAL.md)
+
 ## How the systems connect
 
 - **Research and access.** A workshop ledger grows into a terminal that shows each age gate, unmet capabilities, and recovery options. Shared proofs unlock team designs. The server owns access and permissions. Required encounters use deterministic evidence and repeatable objectives. Optional challenges expand routes, loadouts, and efficiency.

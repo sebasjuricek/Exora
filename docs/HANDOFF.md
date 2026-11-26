@@ -14,7 +14,7 @@ Workshop is implemented in the source checkout containing this file. The baselin
 - `machines/bench` implements the server-authoritative ledger menu and manual operations. Bench and press plans live in `data/exora/recipe/manual`. Each proof opens the ingredients and equipment needed for the following step.
 - `energy` owns generation, storage, transfer and station menus. `machines/powered` snapshots each consumed workpiece and its output. The three mill recipes live in `data/exora/recipe/milling`. Client screens and original models use the saved machine state.
 - `progression/WorkshopProgress` stores consecutive proofs for scoreboard teams and personal UUIDs in Overworld SavedData. A legitimate mill batch can earn one credit. An automated line can keep producing after that demonstration.
-- Use the [architecture](../ARCHITECTURE.md), [progression spec](PROGRESSION.md) and [roadmap](../ROADMAP.md) for future work. The next new gameplay milestone is Electrical Local Grid. Start with a short cable run that powers this existing mill from this existing buffer. Preserve the direct adjacent-generator commissioning proof.
+- Start the next gameplay milestone with the [Electrical design brief](ELECTRICAL.md). Implement Local Grid first by powering the existing mill from the existing buffer through cable. Preserve the direct adjacent-generator Workshop proof. The full age adds automated production and ends with First Signal at a player-built survey mast. See the [architecture](../ARCHITECTURE.md), [progression spec](PROGRESSION.md) and [roadmap](../ROADMAP.md) for the wider plan.
 
 ## Verification
 

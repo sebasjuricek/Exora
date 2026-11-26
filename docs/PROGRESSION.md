@@ -11,7 +11,7 @@ Start with the [master design](MASTER_DESIGN.md) for the confirmed scope, then u
 | Age | Three internal tiers | Proof that advances the team |
 | --- | --- | --- |
 | [1. Workshop](#1-workshop) | 1.1 Workbench · 1.2 Metalwork · 1.3 Starter Power | Collect Wound Cores from a Coil Mill job powered by a Starter Generator |
-| [2. Electrical](#2-electrical) | 2.1 Local Grid · 2.2 Production Line · 2.3 Survey Network | Deliver an automated batch to restore an Overworld survey station |
+| [2. Electrical](#2-electrical) | 2.1 Local Grid · 2.2 Production Line · 2.3 Survey Network | Install a factory-made Relay Module and complete the First Signal survey calibration |
 | [3. Mechanized](#3-mechanized) | 3.1 Precision · 3.2 Surface Industry · 3.3 Industrial Control | Commission a service route and recover the relay record |
 | [4. Aerospace](#4-aerospace) | 4.1 Flight · 4.2 Expedition Systems · 4.3 Remote Science | Restore the remote beacon and return its survey data |
 | [5. Atomic](#5-atomic) | 5.1 Containment · 5.2 Shielded Power · 5.3 Remediation | Demonstrate shielded power and close the research campus hazard loop |
@@ -63,17 +63,19 @@ These six branches share the age sequence. A branch can provide a required capab
 
 ## 2. Electrical
 
+The [Electrical design brief](ELECTRICAL.md) describes the proposed minimum route, its player-built survey option, and the First Signal finale. The broader equipment below can be added as that route matures.
+
 **Required inputs.** Workshop plates and drives, copper, redstone, glass, and insulating stock. Electricity begins with the Workshop generator and can use charcoal or an early renewable option when available.
 
 | Tier | Machines, processes, and power | Unlocks and capability | Proof |
 | --- | --- | --- | --- |
 | 2.1 Local Grid | Cables, buffers, switches, chargers, and grid diagnostics. | Powered scanner and repair tool. Supply multiple devices from a local grid. | Run a machine from a networked buffer and read its power state. |
 | 2.2 Production Line | Grinder or processor, basic assembler, conveyors, item filters, fluid pipes, and simple chemistry and water processing. | Automatically feed inputs and extract output. Start irrigation, automated planting and collection, and basic purification. | Demonstrate a batch with automated input and output. |
-| 2.3 Survey Network | Survey terminal and field power box use the same standard parts as the factory. | Map resource deposits, claim shared research, and connect field and home logistics. | Install the automated batch output and power the survey station. |
+| 2.3 Survey Network | A Survey Terminal and separate cable-powered mast use the same standard parts as the factory. | Record a field waypoint and read its bearing on a Survey Chart. Resource mapping can follow as a side capability. | Install a factory-made Relay Module and complete First Signal calibration. |
 
-**World and challenges.** A disabled Overworld survey station, inactive service drones, and blocked production outputs teach power isolation and fault diagnosis. A marked replacement field terminal can verify the same proof if the station is unusable.
+**World and challenges.** A player-built station gives every survival world a repeatable route. An optional disabled Overworld station can teach field repair through the same proof. Power isolation and blocked production outputs teach fault diagnosis along the way.
 
-**Advance to Mechanized.** Restore the survey station with the 2.2 output and register its survey data. The 2.1 scanner and field power box provide everything needed for the visit.
+**Advance to Mechanized.** Commission the survey link using the 2.2 output and register the result. The mast and terminal can be rebuilt, and a new automated batch can replace a lost module.
 
 ## 3. Mechanized
 
