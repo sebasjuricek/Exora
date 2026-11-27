@@ -18,7 +18,16 @@ These families define Exora's intended scope. Individual recipes, names, statist
 | Futuristic technology | Teleportation, gravity manipulation, matter replication, holograms, dimensional travel, artificial wormholes, and Dyson spheres. Late industry extends logistics to new environments and supports repeatable megaprojects. |
 | Civilian technology | Automated agriculture, medical chambers, environmental purification, advanced construction, and industrial infrastructure. These systems support recovery, habitat operation, and resilient production. |
 
-The [content catalog](../CONTENT_CATALOG.md) connects each family to a proposed fabrication or research milestone. The [progression spec](PROGRESSION.md) defines the eight ages, internal tiers, and verifiable gates. The [roadmap](../ROADMAP.md) orders development independently of in-game progression.
+The [content catalog](../CONTENT_CATALOG.md) identifies when each technology becomes available, how players obtain it, and what it does for them at that point. The [progression spec](PROGRESSION.md) defines the eight ages, internal tiers, and verifiable gates. The [roadmap](../ROADMAP.md) orders development independently of in-game progression.
+
+## Campaign goals
+
+1. **Build an industrial town that can serve the Overworld.** Grow the bench into a powered production line and connect it to a survey site. Build roads, stations and depots where there is a route worth serving. Give the player a reason to expand each system by letting the next outpost request supplies the current factory can make.
+2. **Turn the factory into an expedition base.** Use vehicles, field gear, robots and industrial controls to deliver freight, diagnose a fault and recover a stranded team. The Overworld finale should bring familiar equipment back into play. A working factory can manufacture replacements, a depot can restore gear and a rescue route can bring the crew home.
+3. **Establish a lasting presence off-world.** Start with a return-capable flight. Give the orbiting dock a reason to exist as a transfer point, then establish asteroid supply and planetary habitats with ongoing power, shelter and resupply. Use a first greenhouse or habitat district to show how earlier water, agriculture and construction systems work together away from home.
+4. **Build infrastructure that changes what the network can reach.** Commission a dimensional route that carries cargo both ways. Finish a working Dyson sphere sector that sends power to an actual habitat or gate. Each completed sector or route should offer another use for the team's existing industries.
+
+Show the results at the scale of the technology. A wired mast lights up where someone built it. A cargo terminal shows what arrived. A habitat controller shows which systems can sustain a crew. The final sector shows what remote endpoint it is powering.
 
 ## Player loop
 
@@ -29,6 +38,8 @@ Field discoveries and demonstrated production feed research. Research offers a c
 Use GregTech-inspired sequential ages and reusable material forms. Use HBM-inspired manufacturing with visible machine states, transport, protected facilities, and field equipment. Keep the recipe graph legible. Reuse plates, frames, drives, controllers, and energy cells across the factory. Increase complexity through new processes, installations, and automation.
 
 Give each age one memorable engineering accomplishment that the player builds toward, can see working, and can use afterward. Let those moments grow with the scale of the technology. Workshop's mill runs on saved charge, Electrical's First Signal lights a mast from a shop-built grid, Mechanized can complete a repeatable cargo delivery, and the first orbital trip can return the crew safely. Prioritize a clear action and a useful result when designing each age's payoff. [Electrical design brief](ELECTRICAL.md)
+
+Introduce useful equipment while its job is new to the player. An Electrical waypoint solves the first return trip. Mechanized exoskeletons and drones help with depot work, then Atomic and Fusion variants operate in harsher conditions. A tabletop Aerospace survey projector can teach the display before a Cosmic holographic controller runs a live gate. Every new capability should have a usable entry design, a first job, and a reason to keep or upgrade it. Give players a reasonable chance to use the tool before asking them to master another one.
 
 ## How the systems connect
 

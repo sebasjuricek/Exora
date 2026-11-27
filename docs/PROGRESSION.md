@@ -21,6 +21,21 @@ Start with the [master design](MASTER_DESIGN.md) for the confirmed scope, then u
 
 Each tier unlocks the machinery and access needed to attempt its own proof. Completing that proof opens the next tier in the row. Completing the final tier proof opens the following age. A new age grants its entry designs before the next proof is offered. Branch sidegrades share the current tier and its inputs. The research UI displays one checklist per tier and previews the next age.
 
+## Age payoffs
+
+These are design targets for what the player will see working and what remains usable after the proof. The [content catalog](../CONTENT_CATALOG.md) gives the acquisition station, input or claim, and first use for each technology.
+
+| Age | Moment the player earns | What remains useful |
+| --- | --- | --- |
+| Workshop | Disconnect the generator and watch the mill finish a batch on stored power. | A working bench, fabrication stock, mill and portable buffer. |
+| Electrical | Close the switch and see the distant survey mast light up and confirm the first signal. | A production line, a local grid and a field waypoint you can navigate back to. |
+| Mechanized | Unload the first verified freight delivery, then see the destination register on the control network. | A repeatable depot route, stocked service point and a carrier that can be repaired for the next run. |
+| Aerospace | Land, service and send an aircraft back out. Bring a remote beacon online and view its survey on a tabletop projection. | A working hangar, arrival and return route, and a survey of places the crew can now reach. |
+| Atomic | Isolate a simulated fault and reopen a section of the research campus by bringing its protective systems online. | A protected supply grid, serviceable field protection and a stocked recovery point. |
+| Fusion | Complete the Overworld finale and recover a crew using equipment, spares and support built by the factory. | An expedition-ready supply and rescue network that supports the first launch. |
+| Orbital and Planetary | Make a crewed trip to a dock and back, then give a planetary habitat its first working resupply and greenhouse. | An orbital transfer point, off-world feedstock and a functioning habitat. |
+| Cosmic Engineering | Bring cargo home through a dimensional gate and run a remote endpoint from a commissioned stellar collector sector. | An expandable freight and power network across destinations. |
+
 ## Technology branches
 
 These six branches share the age sequence. A branch can provide a required capability or an optional improvement at a given tier. The gate names the capability to prove so a fork such as air versus ground access stays a choice.
@@ -42,6 +57,7 @@ These six branches share the age sequence. A branch can provide a required capab
 
 ### Progression and manufacturing rules
 
+- **Place equipment where it has an immediate job.** Unlock entry tools before the proof they enable. Put stronger variants and specialized equipment after a successful first use. For each design record, name the unlock condition, the station or source, how to replace it, and the first job it handles.
 - **Use a small shared part set.** Plates and frames provide structure. Drives provide motion. Controllers provide logic. Cells provide portable power. Add a specialty material or module when it grants a new property such as shielding, flight, or extreme-environment operation. Reuse the same forms across recipes and allow later lines to produce them automatically.
 - **Make complexity come from the factory.** A job can need power, transport, packaging, or a machine environment. One demonstration batch can validate a tier. Subsequent batches use filters, routing, buffers, and machine controls. Earlier machines keep a throughput, cost, backup, or remote-work role.
 - **Use observable evidence.** A team ledger records completed production, installations, and discovery objectives. Show missing conditions, where to find the input, and what completion grants. Use completed jobs and functional systems as gates. Leave real-time research timers, random mandatory drops, and repeated hand crafting out of the mainline.
@@ -99,7 +115,7 @@ The [Electrical design brief](ELECTRICAL.md) describes the proposed minimum rout
 | --- | --- | --- | --- |
 | 4.1 Flight | Airframe bench, hangar, run-up diagnostics, and high-output charging or in-game fuel service. | Assemble propeller planes and fighter planes, cargo aircraft, and helicopters. Pilot, land, and service them. | Demonstrate a launch, landing, and turnaround at a hangar. |
 | 4.2 Expedition Systems | Advanced airframe rig, pressure workshop, range relays, and depot storage. | Fighter jets, jetpacks, submarines, hovercraft, maglev routes, and expedition ship upgrades. A shared service interface handles field repairs and cargo. | Install expedition equipment and complete a depot resupply or beacon deployment. |
-| 4.3 Remote Science | Mobile survey lab and remote beacon. Use existing power, batteries, and relay links. | Collect high-altitude or submerged survey data. Enable remote discovery and diagnostics. | Restore the beacon and bring verified survey data home. |
+| 4.3 Remote Science | Mobile survey lab, remote beacon and tabletop survey projector. Use existing power, batteries, and relay links. | Collect high-altitude or submerged survey data and turn it into a local route display. | Restore the beacon and bring verified survey data home. |
 
 **World and challenges.** A high-altitude ruin and a submerged observatory teach low visibility, recoverable weather faults, and expedition range. The beacon has a marked foot-access approach. Specialized vehicles expand access to optional sites.
 

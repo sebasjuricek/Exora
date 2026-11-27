@@ -15,6 +15,7 @@ Workshop is implemented in the source checkout containing this file. The baselin
 - `energy` owns generation, storage, transfer and station menus. `machines/powered` snapshots each consumed workpiece and its output. The three mill recipes live in `data/exora/recipe/milling`. Client screens and original models use the saved machine state.
 - `progression/WorkshopProgress` stores consecutive proofs for scoreboard teams and personal UUIDs in Overworld SavedData. A legitimate mill batch can earn one credit. An automated line can keep producing after that demonstration.
 - Start the next gameplay milestone with the [Electrical design brief](ELECTRICAL.md). Implement Local Grid first by powering the existing mill from the existing buffer through cable. Preserve the direct adjacent-generator Workshop proof. The full age adds automated production and ends with First Signal at a player-built survey mast. See the [architecture](../ARCHITECTURE.md), [progression spec](PROGRESSION.md) and [roadmap](../ROADMAP.md) for the wider plan.
+- Use the [content catalog](../CONTENT_CATALOG.md) to place equipment when the player first has a use for it, from Electrical survey gear to Mechanized carriers and later orbital infrastructure. Each entry records first access, acquisition and a practical job. The [campaign goals](MASTER_DESIGN.md#campaign-goals) explain what earlier systems should grow into. The Electrical brief includes the [next Codex prompt](ELECTRICAL.md#implementation-prompt).
 
 ## Verification
 
